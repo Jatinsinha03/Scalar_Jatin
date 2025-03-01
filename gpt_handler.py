@@ -1,11 +1,10 @@
-import os
-import base64
 from google import genai
 from google.genai import types
+import config
 
 def generate(leetcode_url, user_question):
     client = genai.Client(
-        api_key="AIzaSyDB0qmu4PmsRU13r1HIFBdPWE_B6fewAqs",
+        api_key=config.GEMINI_API_KEY,
     )
 
     model = "gemini-2.0-flash"
