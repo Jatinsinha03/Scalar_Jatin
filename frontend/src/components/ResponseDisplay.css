@@ -1,0 +1,84 @@
+.response-container {
+    max-width: 1400px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Main title (Response header) */
+.response-container h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: #2c3e50;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Section Titles (like Overview, Approach, etc.) */
+.response-section h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Paragraph Text */
+.response-section p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Loading message */
+.loading {
+    font-size: 22px;
+    color: #888;
+    font-style: italic;
+    text-align: center;
+}
+
+/* No response message */
+.no-response {
+    font-size: 20px;
+    color: #555;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Add some spacing between sections */
+.response-section {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Code Blocks (if any) */
+.response-section pre {
+    background-color: #272822;
+    color: #f8f8f2;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    overflow-x: auto;
+}
+
+/* Bullet Points */
+.response-section ul {
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.response-section li {
+    margin-bottom: 8px;
+}

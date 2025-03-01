@@ -48,7 +48,20 @@ def generate(leetcode_url, user_question):
             role="user",
             parts=[
                 types.Part.from_text(
-                    text=f"Provide a detailed explanation and approach for solving the problem found at {leetcode_url}. User question: {user_question}"
+                    text=f"""
+    # Analyze and Guide on the Problem at {leetcode_url}
+    ## User Question
+    {user_question}
+
+    ### Please format your response with the following sections and focus on guiding the user towards the solution rather than providing direct answers:
+    - **Overview of the Problem**: Provide a brief description of the problem to ensure the user understands the challenge.
+    - **Building Intuition**: Help the user develop an understanding of the problem by discussing underlying concepts and the logic needed to approach a solution.
+    - **Suggested Approaches**: Outline possible methods to tackle the problem, highlighting the pros and cons of each approach without giving away explicit steps or solutions.
+    - **Guidance for Implementation**: Offer hints on how the user might start coding the solution, including what data structures might be useful and any initial setup tips. Avoid giving exact code.
+    - **Tips for Optimization**: Discuss general strategies for making the solution more efficient or elegant. Encourage the user to think about how they might optimize their initial solution.
+    - **Common Pitfalls and Edge Cases**: Advise on typical mistakes and special scenarios that the user should consider which might complicate their solution.
+    """
+
                 ),
             ],
         ),
