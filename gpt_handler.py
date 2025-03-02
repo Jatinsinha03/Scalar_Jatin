@@ -1,6 +1,6 @@
 from google import genai
 from google.genai import types
-import config
+import os
 
 def generate(leetcode_url, user_question):
     client = genai.Client(
