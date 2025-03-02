@@ -1,38 +1,77 @@
-/* General Styling for the App */
+/* General App Styling */
 .App {
   text-align: center;
+  font-family: Arial, sans-serif;
   background-color: #f4f4f9;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  padding-top: 20px;
-  font-family: 'Arial', sans-serif;
+  padding: 20px;
 }
 
-/* Main Title */
-h1 {
-  font-size: 36px;
+/* Chat Container */
+.chat-container {
+  width: 90%;
+  height: 800px;
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Chat Message Styles */
+.chat-message {
+  padding: 10px;
+  border-radius: 8px;
+  margin: 5px 0;
+  max-width: 70%;
+  word-wrap: break-word;
+  font-size: 20px;
+}
+
+.chat-message.user {
+  align-self: flex-end;
+  background-color: #007bff;
+  color: white;
+  text-align: right;
+}
+
+.chat-message.ai {
+  align-self: flex-start;
+  background-color: #eee;
+  text-align: left;
+}
+
+/* Loading Indicator */
+.loading {
+  font-style: italic;
+  color: #555;
+}
+
+/* Response Display Styling */
+.response-container {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.response-section h3 {
+  font-size: 20px;
   font-weight: bold;
   color: #007bff;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
-  border-bottom: 4px solid #007bff;
-  padding-bottom: 10px;
 }
 
-/* Question Input Section */
-.question-input-container {
-  width: 600px;
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+.response-section p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
 }
-
 /* Input Fields */
 input, textarea {
   width: 100%;
@@ -48,7 +87,6 @@ input:focus, textarea:focus {
   border-color: #0056b3;
 }
 
-/* Submit Button */
 button {
   background-color: #007bff;
   color: white;
@@ -64,31 +102,4 @@ button {
 
 button:hover {
   background-color: #0056b3;
-}
-
-/* Loading Message */
-.loading {
-  font-size: 22px;
-  color: #888;
-  font-style: italic;
-  margin-top: 20px;
-}
-
-/* Container for Response */
-.response-container {
-  max-width: 1400px;
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
-  text-align: left;
-}
-
-/* No response message */
-.no-response {
-  font-size: 20px;
-  color: #555;
-  font-weight: bold;
-  text-align: center;
 }
