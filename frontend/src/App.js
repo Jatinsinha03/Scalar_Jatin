@@ -22,7 +22,7 @@ function App() {
     setLoading(true);
 
     try {
-      const response = await fetch('http://localhost:5000/ask', {
+      const response = await fetch('https://leetcode-helper-backend.onrender.com/ask', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ leetcode_url: leetcodeUrl, question: question })
