@@ -120,22 +120,7 @@ Start the frontend server
 ```
 
 ## Project Architure
-📂 LeetCode-Helper
-│-- app.py              # Main Flask backend
-│-- gpt_handler.py      # Handles Gemini AI responses
-│-- config.py           # Configuration (API key handling)
-│-- requirements.txt    # Python dependencies
-│-- 📂 frontend
-│   │-- src
-│   │   │-- components
-│   │   │   │-- QuestionInput.js     # User input for question
-│   │   │   │-- ResponseDisplay.css  # Css for the response
-│   │   │   │-- ResponseDisplay.js   # Displays AI response
-│   │   │-- App.js            # Main React app
-│   │   │-- index.js          # Entry point
-│   │-- package.json         # Frontend dependencies
-│   │-- public
-│-- README.md
+<img width="676" alt="Screenshot 2025-03-02 at 12 21 11 PM" src="https://github.com/user-attachments/assets/87034adf-6544-4c5e-b538-93fc6c60c0a1" />
 
 ### 🖥️ **Backend (Flask)**
 The backend is built using **Flask** and is responsible for handling user requests, processing AI responses, and interacting with Gemini AI.
@@ -206,3 +191,9 @@ This structure ensures that **LeetCode-Helper** is **efficient, scalable, and us
 
 
 ## Images
+
+![Screenshot 2025-03-02 at 12-16-10 LeetCode Question Helper](https://github.com/user-attachments/assets/d082a60a-9c91-4c6c-bf2a-60291f76b273)
+![Screenshot 2025-03-02 at 12-16-29 LeetCode Question Helper](https://github.com/user-attachments/assets/d1ed7824-a82f-43c6-876f-51eb29075b57)
+![Screenshot 2025-03-02 at 12-18-57 LeetCode Question Helper](https://github.com/user-attachments/assets/92ddee61-b6eb-450e-9cea-c47530ddb001)
+
+
