@@ -4,7 +4,7 @@ import config
 
 def generate(leetcode_url, user_question):
     client = genai.Client(
-        api_key=config.GEMINI_API_KEY,
+        api_key=os.environ.get("GEMINI_API_KEYY"),
     )
 
     model = "gemini-2.0-flash"
